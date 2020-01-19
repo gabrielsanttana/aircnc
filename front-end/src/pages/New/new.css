@@ -1,0 +1,23 @@
+label#thumbnail {
+    margin-top: 20px;
+    height: 160px;
+    border: 1px dashed #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    cursor: pointer;
+}
+
+label#thumbnail input {
+    display: none;
+}
+
+label#thumbnail.has-thumbnail {
+    border: none;
+    border-radius: 4px;
+}
+
+label#thumbnail.has-thumbnail img {
+    display: none;
+}
