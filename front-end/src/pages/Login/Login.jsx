@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, {useState} from "react";
 import api from "../../services/api";
 
-function Login({ history }) {
+function Login({history}) {
     const [email, setEmail] = useState("");
 
     async function handleSubmit(event) {
@@ -9,7 +9,7 @@ function Login({ history }) {
 
         const response = await api.post("/sessions", {email});
 
-        const { _id: user_id } = response.data;
+        const {_id: user_id} = response.data;
 
         localStorage.setItem("user", user_id);
 
