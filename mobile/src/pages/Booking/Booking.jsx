@@ -1,9 +1,9 @@
-import React, { useState } from "react";
-import { View, Text, StyleSheet, TextInput, TouchableOpacity, AsyncStorage, Alert } from "react-native";  
+import React, {useState} from "react";
+import {View, Text, StyleSheet, TextInput, TouchableOpacity, AsyncStorage, Alert} from "react-native";  
 import styles from "./styles";
 import api from "../../services/api";
 
-function Booking({ navigation }) {
+function Booking({navigation}) {
     const [date, setDate] = useState("");
 
     const spot_id = navigation.getParam("spot_id");

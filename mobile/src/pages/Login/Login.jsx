@@ -1,17 +1,17 @@
-import React, { useState, useEffect } from "react";
-import { StyleSheet, View, Text, Image, TextInput, TouchableOpacity, AsyncStorage, KeyboardAvoidingView } from "react-native";
+import React, {useState, useEffect} from "react";
+import {StyleSheet, View, Text, Image, TextInput, TouchableOpacity, AsyncStorage, KeyboardAvoidingView} from "react-native";
 import logo from "../../../assets/logo.png"
 import styles from "./styles";
 import api from "../../services/api";
 
-export default function Login({ navigation }) {
+export default function Login({navigation}) {
     const [email, setEmail] = useState("");
     const [techs, setTechs] = useState("");
 
     async function handleSubmit() {
         const response = await api.post("/sessions", {email});
 
-        const { _id: user_id } = response.data;
+        const {_id: user_id} = response.data;
 
         await AsyncStorage.setItem("user_id", user_id);
         await AsyncStorage.setItem("techs", techs);

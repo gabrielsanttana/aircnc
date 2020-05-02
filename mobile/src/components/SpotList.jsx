@@ -1,14 +1,14 @@
-import React, { useState, useEffect } from "react";
-import { StyleSheet, View, Text, Image, TouchableOpacity, FlatList } from "react-native";
+import React, {useState, useEffect} from "react";
+import {StyleSheet, View, Text, Image, TouchableOpacity, FlatList} from "react-native";
 import api from "../services/api";
-import { withNavigation } from "react-navigation";
+import {withNavigation} from "react-navigation";
 
-function SpotList({ tech, navigation }) {
+function SpotList({tech, navigation}) {
     const [spots, setSpots] = useState([]);
 
     useEffect(() => {
         async function loadSpots() {
-            const response = await api.get("/spots", { params: { tech } });
+            const response = await api.get("/spots", {params: {tech}});
             setSpots(response.data);
         }
 
@@ -16,7 +16,7 @@ function SpotList({ tech, navigation }) {
     }, []);
 
     function handleRequest(spot_id) {
-        navigation.navigate("Booking", { spot_id });
+        navigation.navigate("Booking", {spot_id});
     }
 
     return (
@@ -28,7 +28,7 @@ function SpotList({ tech, navigation }) {
                 data={spots}
                 keyExtractor={spot => spot._id}
                 showsHorizontalScrollIndicator={false}
-                renderItem={({ item }) => (
+                renderItem={({item}) => (
                     <View style={styles.listItem}>
                         <Image style={styles.thumbnail} source={{uri: item.thumbnail_url}} />
                         <Text style={styles.company}>{item.company} </Text>

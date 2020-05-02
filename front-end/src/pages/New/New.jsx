@@ -1,9 +1,9 @@
-import React, { useState, useMemo } from "react";
+import React, {useState, useMemo} from "react";
 import camera from "../../assets/camera.svg"
 import "./new.css";
 import api from "../../services/api";
 
-function New({ history }) {
+function New({history}) {
     const [thumbnail, setThumbnail] = useState("");
     const [company, setCompany] = useState("");
     const [techs, setTechs] = useState("");

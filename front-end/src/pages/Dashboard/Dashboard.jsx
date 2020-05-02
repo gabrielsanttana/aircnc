@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useMemo } from "react";
-import { Link } from "react-router-dom";
+import React, {useState, useEffect, useMemo} from "react";
+import {Link} from "react-router-dom";
 import socketio from "socket.io-client";
 import "./dashboard.css";
 import api from "../../services/api";
@@ -26,7 +26,7 @@ function Dashboard() {
         async function loadSpots() {
             const user_id = localStorage.getItem("user");
 
-            const response = await api.get("/dashboard", { headers: {user_id} });
+            const response = await api.get("/dashboard", {headers: {user_id}});
 
             setSpots(response.data);
         }
@@ -61,7 +61,7 @@ function Dashboard() {
         <ul className="spot-list">
             {spots.map(spot => (
                 <li key={spot._id}>
-                    <header style={{ backgroundImage: `url(${spot.thumbnail_url})`}} />
+                    <header style={{backgroundImage: `url(${spot.thumbnail_url})`}} />
                     <strong>{spot.company}</strong>
                     <span>{spot.price ? `R$${spot.price}/dia` : "GRATUITO"}</span>
                 </li>

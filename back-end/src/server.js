@@ -19,7 +19,7 @@ mongoose.connect(`mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MO
 const connectedUsers = {};
 
 io.on("connection", socket => {
-    const { user_id } = socket.handshake.query;
+    const {user_id} = socket.handshake.query;
 
     connectedUsers[user_id] = socket.id;
 });

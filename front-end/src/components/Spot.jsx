@@ -1,6 +1,6 @@
 import React from "react";
 
-function Spot({ company, price }) {
+function Spot({company, price}) {
     return (
         <li>
             <header />

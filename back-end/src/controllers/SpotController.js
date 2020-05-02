@@ -3,7 +3,7 @@ const User = require("../models/User");
 
 module.exports = {
     async index(req, res) {
-        const { tech } = req.query;
+        const {tech} = req.query;
 
         const spots = await Spot.find({techs: tech});
 
@@ -11,9 +11,9 @@ module.exports = {
     },
 
     async store(req, res) {
-        const { filename } = req.file;
-        const { company, techs, price } = req.body;
-        const { user_id } = req.headers;
+        const {filename} = req.file;
+        const {company, techs, price} = req.body;
+        const {user_id} = req.headers;
 
         const user = await User.findById(user_id);
 

@@ -1,6 +1,6 @@
-import React, { useEffect, useState } from "react";
-import { View, Text, Image, TouchableOpacity, AsyncStorage, SafeAreaView, Alert } from "react-native";
-import { ScrollView } from "react-native-gesture-handler";
+import React, {useEffect, useState} from "react";
+import {View, Text, Image, TouchableOpacity, AsyncStorage, SafeAreaView, Alert} from "react-native";
+import {ScrollView} from "react-native-gesture-handler";
 import socketio from "socket.io-client";
 import SpotList from "../../components/SpotList";
 import styles from "./styles";
@@ -12,7 +12,7 @@ function List() {
     useEffect(() => {
         AsyncStorage.getItem("user_id").then(user_id => {
             const socket = socketio("http://192.168.15.126:3333", {
-                query: { user_id }
+                query: {user_id}
             });
 
             socket.on("booking_response", booking => {
