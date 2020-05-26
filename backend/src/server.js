@@ -11,7 +11,7 @@ const app = express();
 const server = http.Server(app);
 const io = socketio(server);
 
-mongoose.connect(`mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@cluster0-lfmbb.mongodb.net/aircnc`, {
+mongoose.connect(`mongodb+srv://...`, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
