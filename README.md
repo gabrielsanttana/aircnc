@@ -39,15 +39,15 @@ $ git clone https://github.com/gabrielsanttana/aircnc
 
 Before running the API, it's necessary to have a database setup on a MongoDB Atlas Cluster. After getting it, create a .env file in the project root and put these keys in environment variables and they'll work on the mongoose connection string:
 
-`
+```
 MONGODB_USERNAME=your_username
 MONGODB_PASSWORD=your_password
 MONGODB_CLUSTER_URL=your_cluster_url
-`
+```
 
-`
+```
 mongoose.connect(`mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@${process.env.MONGODB_CLUSTER_URL}/aircnc`)
-`
+```
 
 Or just place the connection string on the server.js file.
 
