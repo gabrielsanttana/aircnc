@@ -1,6 +1,8 @@
-# <div align="center" style="margin-bottom: 50px">
+<div align="center" style="margin-bottom: 50px">
   <img src="https://github.com/gabrielsanttana/aircnc/blob/master/mobile/assets/logo.png?raw=true)"/>
 </div>
+
+###
 
 <p align="center">An Airbnb clone that books companies spots for developers 🏢</p>
 
@@ -46,7 +48,6 @@ mongoose.connect(`mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MO
 Then:
 
 ```bash
-# Run the API
 $ cd aircnc/backend
 $ npm install
 $ node src/server.js
@@ -54,8 +55,7 @@ $ node src/server.js
 
 #### Web:
 
-```
-# Run the web app
+```bash
 $ cd aircnc/frontend
 $ npm install
 $ npm start 
@@ -68,8 +68,7 @@ $ npm start
 
 To run the mobile application, it's necessary to have an React Native Expo environment setup. With that:
 
-```
-# Run the mobile app
+```bash
 $ cd aircnc/mobile
 $ npm install
 $ npm start
