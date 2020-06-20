@@ -1,4 +1,4 @@
-<div align="center" style="margin-bottom: 20px">
+# <div align="center" style="margin-bottom: 50px">
   <img src="https://github.com/gabrielsanttana/aircnc/blob/master/mobile/assets/logo.png?raw=true)"/>
 </div>
 
@@ -12,9 +12,9 @@
   <li><a href="https://reactjs.org/">React</a></li>
   <li><a href="https://reactnative.dev/">React Native</a></li>
   <li><a href="https://expo.io/">Expo</a></li>
-  <li><a href="">MongoDB</a></li>
-  <li><a href="">Mongoose</a></li>
-  <li><a href="">Socket.io</a></li>
+  <li><a href="https://www.mongodb.com/">MongoDB</a></li>
+  <li><a href="https://mongoosejs.com/">Mongoose</a></li>
+  <li><a href="https://socket.io/">Socket.io</a></li>
 </ul>
 
 ## ⚙️ Requirements:
@@ -74,7 +74,8 @@ $ cd aircnc/mobile
 $ npm install
 $ npm start
 
-# A new window with application log will open in the browser. Then, you can run it by scanning the QR code with the Expo mobile app or with its local URL.
+
+# A new window with application log will open in the browser. Then, you can run and open the app by scanning the QR code with the Expo mobile app or with its local URL.
 ```
 
 ## ⚖️ License:
