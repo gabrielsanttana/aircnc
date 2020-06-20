@@ -66,15 +66,19 @@ $ npm start
 
 #### Mobile:
 
-To run the mobile application, it's necessary to have an React Native Expo environment setup. With that:
+To run the mobile application, it's necessary to have an React Native Expo environment setup and the Expo mobile app installed on your smartphone. 
+
+With that:
 
 ```bash
+$ npm install -g expo-cli
 $ cd aircnc/mobile
 $ npm install
 $ npm start
 
 
-# A new window with application log will open in the browser. Then, you can run and open the app by scanning the QR code with the Expo mobile app or with its local URL.
+# A new window with application log will open in the browser
+# Then, you can load the app by scanning the QR code with the Expo mobile app or by using the local URL
 ```
 
 ## ⚖️ License:
