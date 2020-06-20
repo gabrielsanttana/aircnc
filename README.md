@@ -35,15 +35,21 @@
 $ git clone https://github.com/gabrielsanttana/aircnc
 ```
 
-#### API:
+#### API
 
-Before running the API, it's necessary to have a database running on a MongoDB Atlas Cluster. After getting it, place your MongoDB Atlas username and password along with the cluster URL in the database connection string in the server.js file.
+Before running the API, it's necessary to have a database setup on a MongoDB Atlas Cluster. After getting it, create a .env file in the project root and put these keys in environment variables and they'll work on the mongoose connection string:
 
-If you prefer, you can assign theses keys in environment variables and just place them on the connection string, like this:
+`
+MONGODB_USERNAME=your_username
+MONGODB_PASSWORD=your_password
+MONGODB_CLUSTER_URL=your_cluster_url
+`
 
-```
-mongoose.connect(`mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@${process.env.MONGODB_CLUSTER_URL}/aircnc
-```
+`
+mongoose.connect(`mongodb+srv://${process.env.MONGODB_USERNAME}:${process.env.MONGODB_PASSWORD}@${process.env.MONGODB_CLUSTER_URL}/aircnc`)
+`
+
+Or just place the connection string on the server.js file.
 
 Then:
 
@@ -53,7 +59,7 @@ $ npm install
 $ node src/server.js
 ```
 
-#### Web:
+#### Web
 
 ```bash
 $ cd aircnc/frontend
@@ -64,7 +70,7 @@ $ npm start
 # The application will pop-up in the browser on localhost:3000
 ```
 
-#### Mobile:
+#### Mobile
 
 To run the mobile application, it's necessary to have an React Native Expo environment setup and the Expo mobile app installed on your smartphone. 
 
