@@ -48,7 +48,7 @@ MONGODB_CLUSTER_URL=your_cluster_url
 If you prefer, just place your connection string on the server.js file:
 
 ```
-mongoose.connect(`mongodb+srv....`);
+mongoose.connect(`mongodb+srv...`);
 ```
 
 Then:
