@@ -72,6 +72,7 @@ The application will pop-up in the browser on http://localhost:3000
 ### Mobile
 
 To run the mobile application, it's necessary to have an React Native Expo environment setup and the Expo mobile app installed on your smartphone. 
+It's also necessary that both the smartphone and the computer are connected to the same network.
 
 With that:
 
