@@ -37,8 +37,7 @@ $ git clone https://github.com/gabrielsanttana/aircnc
 
 ### 🗄️ API
 
-Before running the API, it's necessary to have a database setup on a MongoDB Atlas Cluster. After getting it, create a `.env` file in the project root and put these keys in environment variables and they'll work on the mongoose connection string.
-
+Before running the API, it's necessary to have a database setup on a MongoDB Atlas Cluster. With that, create a `.env` file in the backend folder root and put these keys in environment variables and they'll work on the mongoose connection string.
 
 Example:
 
@@ -48,7 +47,7 @@ MONGODB_PASSWORD=123456
 MONGODB_CLUSTER_URL=cluster0-lfmbb.mongodb.net
 ```
 
-If you prefer, you can just place your connection string on the server.js file:
+If you prefer, you can just place your connection string on the `server.js` file:
 
 ```
 mongoose.connect(`mongodb+srv...`);
@@ -59,7 +58,7 @@ Then:
 ```bash
 $ cd aircnc/backend
 $ npm install
-$ npm run dev
+$ npm start
 ```
 
 ### 💻 Web
