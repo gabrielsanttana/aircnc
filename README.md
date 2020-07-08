@@ -2,9 +2,11 @@
   <img src="https://github.com/gabrielsanttana/aircnc/blob/master/mobile/assets/logo.png?raw=true)"/>
 </div>
 
-###
+#####
 
-<p align="center">An Airbnb clone that books companies spots for developers 🏢</p>
+<img src="./assets/web_homepage.png" />
+
+<h4 align="center">An Airbnb clone that books companies spots for developers 🏢</h4>
 
 ## 🛠️ Technologies
 
