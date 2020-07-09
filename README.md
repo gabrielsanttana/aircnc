@@ -6,7 +6,7 @@
 
 <img src="./assets/web_homepage.png" />
 
-<h4 align="center">An Airbnb clone that books companies spots for developers 🏢</h4>
+<p align="center">An Airbnb clone that books companies spots for developers 🏢</p>
 
 ## 🛠️ Technologies
 
