@@ -38,7 +38,7 @@
 $ git clone https://github.com/gabrielsanttana/aircnc
 ```
 
-### 🗄️ API
+### 📦 API
 
 Before running the API, it's necessary to have a database setup on a MongoDB Atlas Cluster. With that, create a `.env` file in the backend folder root and put these keys in environment variables and they'll work on the mongoose connection string.
 
